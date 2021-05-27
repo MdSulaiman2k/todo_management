@@ -53,6 +53,11 @@ input{
   cursor: pointer;
 }
 
+.AddTodo-button:hover {
+  background-color: green;
+
+}
+
 .TodoSectionTitle{
   display: flex;
   color: #453C52;
