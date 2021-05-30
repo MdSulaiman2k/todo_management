@@ -3,6 +3,7 @@ body{
   line-height: 1;
   max-width: 460px;
   margin: 0 auto;
+  margin-top:60px;
 }
 
 input{
@@ -22,6 +23,10 @@ input{
   height:32px;
   align-items: stretch;
   margin-bottom: 24px;
+}
+
+.TodoSelection {
+  margin-bottom: 20px;
 }
 
 .AddTodo-text{
@@ -51,11 +56,6 @@ input{
   padding:6px 22px;
   border-radius:4px;
   cursor: pointer;
-}
-
-.AddTodo-button:hover {
-  background-color: green;
-
 }
 
 .TodoSectionTitle{
