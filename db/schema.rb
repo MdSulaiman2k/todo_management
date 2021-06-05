@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 2021_05_21_130406) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.text "user_name", null: false
-    t.text "user_email", null: false, unique: true
-    t.text "user_password", null: false
+    t.text "name", null: false
+    t.text "email", null: false, unique: true
+    t.text "password", null: false
   end
 end
