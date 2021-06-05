@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     password = params[:password]
     user = User.where("email = ?", email).first
     if user == nil
-      render plain "false"
+      render plain: "false"
     elsif user.password == password
       render plain: "true"
     else

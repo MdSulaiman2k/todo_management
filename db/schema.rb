@@ -15,15 +15,10 @@ ActiveRecord::Schema.define(version: 2021_05_21_130406) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "todos", force: :cascade do |t|
-    t.text "todo_text"
-    t.date "due_date"
-    t.boolean "completed"
-  end
-
   create_table "users", force: :cascade do |t|
     t.text "name", null: false
-    t.text "email", null: false, unique: true
+    t.text "email", null: false
     t.text "password", null: false
   end
+
 end
